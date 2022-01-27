@@ -10,7 +10,12 @@ import UIKit
 
 class LoginSystemBaseView: UIView {
     
-    let loginSystemBaseExpandView = LoginSystemBaseExpandView()
+    let infoAlert: UIAlertController = {
+        let alert = UIAlertController(title: "Не верные данные", message: "Введите данные из смс", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(ok)
+        return alert
+    }()
     
     let labelView: UILabel = {
         let label = UILabel()
@@ -59,7 +64,6 @@ class LoginSystemBaseView: UIView {
         super.init(frame: .zero)
         layerView()
         setView()
-        actionsBatton()
         configurationConstraints()
     }
     
@@ -77,14 +81,7 @@ class LoginSystemBaseView: UIView {
         backgroundColor = .white
     }
     
-    func actionsBatton() {
-        
-        loginSystemBaseExpandView.isHidden = true
-        
-        loginSystemBaseExpandView.cancelButton.addTarget(self, action: #selector(cancelButtonAction), for: .touchUpInside)
-        loginSystemBaseExpandView.enableButton.addTarget(self, action: #selector(enableButtonAction), for: .touchUpInside)
-    }
-    
+
     func setView() {
         
         titleStackView.addArrangedSubview(labelView)
@@ -93,8 +90,7 @@ class LoginSystemBaseView: UIView {
         contentStackView.addArrangedSubview(titleStackView)
         contentStackView.addArrangedSubview(infoLabel)
         contentStackView.addArrangedSubview(сhangeButton)
-        contentStackView.addArrangedSubview(loginSystemBaseExpandView)
-        
+
         addSubviews(views: [contentStackView])
         
     }
@@ -106,19 +102,5 @@ class LoginSystemBaseView: UIView {
             make.bottom.equalToSuperview().inset(20)
             make.leading.trailing.equalToSuperview().inset(25)
         }
-    }
-    
-    
-    @objc func cancelButtonAction() {
-        loginSystemBaseExpandView.isHidden = true
-        switchView.isOn = false
-        loginSystemBaseExpandView.textField.text?.removeAll()
-    }
-    
-    @objc func enableButtonAction() {
-        loginSystemBaseExpandView.isHidden = true
-        switchView.isOn = true
-        сhangeButton.isHidden = true
-        loginSystemBaseExpandView.textField.text?.removeAll()
     }
 }

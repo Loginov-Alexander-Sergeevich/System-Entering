@@ -25,7 +25,7 @@ class SystemEnteringViewController: UIViewController {
     var systemEnteringMobileView = SystemEnteringMobileView()
     
     /// UIView
-    let systemEnteringElectronicSignatureView = SystemEnteringElectronicSignatureView()
+    let enteringElectronicSignatureView = EnteringElectronicSignatureView()
     
     /// UIView
     let emailNotificationView = EmailNotificationView()
@@ -63,7 +63,7 @@ class SystemEnteringViewController: UIViewController {
         view.addSubview(scrollView)
         
         stackView.addArrangedSubview(systemEnteringMobileView)
-        stackView.addArrangedSubview(systemEnteringElectronicSignatureView)
+        stackView.addArrangedSubview(enteringElectronicSignatureView)
         stackView.addArrangedSubview(emailNotificationView)
         stackView.addArrangedSubview(securityQuestionView)
         

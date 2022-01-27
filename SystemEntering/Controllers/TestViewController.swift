@@ -10,7 +10,7 @@ import UIKit
 
 class TestViewController: UIViewController {
     
- let a = LoginSystemBaseExpandView()
+ let a = SystemEnteringElectronicSignatureView()
     
     let stackV: UIStackView = {
         let stView = UIStackView()

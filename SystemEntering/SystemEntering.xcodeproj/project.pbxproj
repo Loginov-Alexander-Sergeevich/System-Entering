@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E318ADB2791751A00909620 /* Extension + UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E318ADA2791751A00909620 /* Extension + UITextField.swift */; };
 		4E4F41382786B84A00EBB937 /* SystemEnteringMobileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F41372786B84A00EBB937 /* SystemEnteringMobileView.swift */; };
-		4E4F413A2786B86200EBB937 /* SystemEnteringElectronicSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F41392786B86200EBB937 /* SystemEnteringElectronicSignatureView.swift */; };
+		4E4F413A2786B86200EBB937 /* EnteringElectronicSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F41392786B86200EBB937 /* EnteringElectronicSignatureView.swift */; };
 		4E4F413C2786B87500EBB937 /* EmailNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F413B2786B87500EBB937 /* EmailNotificationView.swift */; };
 		4E4F413E2786B88C00EBB937 /* SecurityQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F413D2786B88C00EBB937 /* SecurityQuestionView.swift */; };
 		4E4F41412786D84800EBB937 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F41402786D84800EBB937 /* TestViewController.swift */; };
@@ -25,12 +25,14 @@
 		4EE71B02277D99A7000F3BE1 /* LoginSystemBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE71B01277D99A7000F3BE1 /* LoginSystemBaseView.swift */; };
 		4EE71B04277D9BEB000F3BE1 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE71B03277D9BEB000F3BE1 /* Extension + UIView.swift */; };
 		4EE71B06277DA38D000F3BE1 /* Extension + UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE71B05277DA38D000F3BE1 /* Extension + UIStackView.swift */; };
+		4EFE472C2796B2E500F383EA /* SystemEnteringElectronicSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE472B2796B2E500F383EA /* SystemEnteringElectronicSignatureView.swift */; };
+		4EFE472F2796BC8200F383EA /* Zaglushka.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFE472E2796BC8200F383EA /* Zaglushka.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E318ADA2791751A00909620 /* Extension + UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UITextField.swift"; sourceTree = "<group>"; };
 		4E4F41372786B84A00EBB937 /* SystemEnteringMobileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnteringMobileView.swift; sourceTree = "<group>"; };
-		4E4F41392786B86200EBB937 /* SystemEnteringElectronicSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnteringElectronicSignatureView.swift; sourceTree = "<group>"; };
+		4E4F41392786B86200EBB937 /* EnteringElectronicSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringElectronicSignatureView.swift; sourceTree = "<group>"; };
 		4E4F413B2786B87500EBB937 /* EmailNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailNotificationView.swift; sourceTree = "<group>"; };
 		4E4F413D2786B88C00EBB937 /* SecurityQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestionView.swift; sourceTree = "<group>"; };
 		4E4F41402786D84800EBB937 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		4EE71B01277D99A7000F3BE1 /* LoginSystemBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSystemBaseView.swift; sourceTree = "<group>"; };
 		4EE71B03277D9BEB000F3BE1 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		4EE71B05277DA38D000F3BE1 /* Extension + UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIStackView.swift"; sourceTree = "<group>"; };
+		4EFE472B2796B2E500F383EA /* SystemEnteringElectronicSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnteringElectronicSignatureView.swift; sourceTree = "<group>"; };
+		4EFE472E2796BC8200F383EA /* Zaglushka.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaglushka.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				4EE71B01277D99A7000F3BE1 /* LoginSystemBaseView.swift */,
 				4E8205F12782F95300FE5E13 /* LoginSystemBaseExpandView.swift */,
+				4EFE472B2796B2E500F383EA /* SystemEnteringElectronicSignatureView.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -74,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4E4F41372786B84A00EBB937 /* SystemEnteringMobileView.swift */,
-				4E4F41392786B86200EBB937 /* SystemEnteringElectronicSignatureView.swift */,
+				4E4F41392786B86200EBB937 /* EnteringElectronicSignatureView.swift */,
 				4E4F413B2786B87500EBB937 /* EmailNotificationView.swift */,
 				4E4F413D2786B88C00EBB937 /* SecurityQuestionView.swift */,
 			);
@@ -88,6 +93,7 @@
 				4EE71AFC277D96D2000F3BE1 /* Views */,
 				4EE71AFD277D96E0000F3BE1 /* Custom */,
 				4EE71AFE277D970B000F3BE1 /* Extension */,
+				4EFE472D2796BC5300F383EA /* Protocols */,
 				4EE71ADB277D9602000F3BE1 /* SystemEntering */,
 				4EE71ADA277D9602000F3BE1 /* Products */,
 			);
@@ -146,6 +152,14 @@
 				4E318ADA2791751A00909620 /* Extension + UITextField.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4EFE472D2796BC5300F383EA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4EFE472E2796BC8200F383EA /* Zaglushka.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +244,12 @@
 			files = (
 				4E4F413E2786B88C00EBB937 /* SecurityQuestionView.swift in Sources */,
 				4EE71ADD277D9602000F3BE1 /* AppDelegate.swift in Sources */,
+				4EFE472F2796BC8200F383EA /* Zaglushka.swift in Sources */,
 				4EE71B06277DA38D000F3BE1 /* Extension + UIStackView.swift in Sources */,
 				4E8205F22782F95300FE5E13 /* LoginSystemBaseExpandView.swift in Sources */,
 				4EE71B04277D9BEB000F3BE1 /* Extension + UIView.swift in Sources */,
-				4E4F413A2786B86200EBB937 /* SystemEnteringElectronicSignatureView.swift in Sources */,
+				4EFE472C2796B2E500F383EA /* SystemEnteringElectronicSignatureView.swift in Sources */,
+				4E4F413A2786B86200EBB937 /* EnteringElectronicSignatureView.swift in Sources */,
 				4EE71B02277D99A7000F3BE1 /* LoginSystemBaseView.swift in Sources */,
 				4E4F41382786B84A00EBB937 /* SystemEnteringMobileView.swift in Sources */,
 				4EE71ADF277D9602000F3BE1 /* SceneDelegate.swift in Sources */,
